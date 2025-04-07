@@ -19,6 +19,7 @@ app.use(express.json());
 
 
 // routes
+app.use("/api/auth", authRoute);
 // test api:
 app.get("/api/test", (req, res) => {
   res.json({ message: "Working!!" });
